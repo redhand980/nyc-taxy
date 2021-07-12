@@ -22,44 +22,48 @@
                 </p>
             </div>
         </nav>
-        <div class="book-a-ride">
-            <p>Book a Ride</p>
-            <hr>
-            <form action="#" method="GET" enctype="multipart/form-data">
-                <div class="form-field">
-                    <p>
-                        <input type="tel" name="phone-number" placeholder="Phone number" maxlength="50" required>
-                    </p>
+        <div class="header-form-wrapper">
+            <div class="book-a-ride">
+                <p>Book a Ride</p>
+                <hr>
+                <form action="#" method="GET" enctype="multipart/form-data">
+                    <div class="form-field">
+                        <p>
+                            <input type="tel" name="phone-number" placeholder="Phone number" maxlength="50" required>
+                        </p>
+                        </div>
+                    <div class="form-field">
+                        <p>
+                            <input type="text" name="car-type" placeholder="Car Type" maxlength="200">
+                        </p>
                     </div>
-                <div class="form-field">
-                    <p>
-                        <input type="text" name="car-type" placeholder="Car Type" maxlength="200">
-                    </p>
+                    <div class="form-field">
+                        <p>
+                            <input type="text" name="travel-from" placeholder="Travel From" value="" maxlength="200">
+                        </p>
+                        </div>
+                    <div class="form-field">
+                        <p>
+                            <input type="text" name="travel-to" placeholder="Travel To" value="" maxlength="200">
+                        </p>
+                    </div>   
+                    <div class="w-form__multiple-item">
+                        <input type="checkbox" value="By using  this form you agree with the storage and handling of your data by this website." required="" class="w-checkbox__input">
+                            <span class="w-checkbox__mask" aria-hidden="true">By using  this form you agree with the storage and handling of your data by this website.</span>
+                            <span title="Required field" class="required-mark">*</span>
+                    </div> 
+                    <button type="submit" class="form-button">Submit</button>         
+                </form>
+            </div>
+            <div class="reliable-taxi">
+                <h2>Your Reliable Taxi Service in NYC</h2>
+                <hr>
+                <p>Taking your anywhere you need to go in a safe and timely manner.</p>
+                <div class="btn-lrn-more">
+                    <a href="#">Learn more</a>
                 </div>
-                <div class="form-field">
-                    <p>
-                        <input type="text" name="travel-from" placeholder="Travel From" value="" maxlength="200">
-                    </p>
-                    </div>
-                <div class="form-field">
-                    <p>
-                        <input type="text" name="travel-to" placeholder="Travel To" value="" maxlength="200">
-                    </p>
-                </div>   
-                <div class="w-form__multiple-item">
-                    <input type="checkbox" value="By using  this form you agree with the storage and handling of your data by this website." required="" class="w-checkbox__input">
-                        <span class="w-checkbox__mask" aria-hidden="true">By using  this form you agree with the storage and handling of your data by this website.</span>
-                        <span title="Required field" class="required-mark">*</span>
-                </div> 
-                <button type="submit" class="form-button">Submit</button>         
-            </form>
-            <h2>Your Reliable Taxi Service in NYC</h2>
-            <hr>
-            <p>Taking your anywhere you need to go in a safe and timely manner.</p>
-        </div>
-        <div class="btn-lrn-more">
-            <a href="#">Learn more</a>
-        </div>
+            </div>
+        </div>        
     </header>
     <main>
         <!--Our Taxi Rates Section-->
