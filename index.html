@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/countdown.css">-->
     <title>NYC Taxy</title>
 </head>
 <body>
@@ -171,7 +172,35 @@
                 <hr>
                 <p>The offer is valid only until the end of January.</p>
                 <div class="countdown">
-                    <p>176 Days 15 Hours 7 Minutes 42 Seconds</p>
+                <!--  <p>176 Days 15 Hours 7 Minutes 42 Seconds</p> -->
+                <div id="year" class="year"></div>
+
+                    <div id="countdown" class="countdown">
+                        <div class="time">
+                            <h2 id="days">00</h2>
+                            <small>days</small>
+                        </div>
+                        <div class="time">
+                            <h2 id="hours">00</h2>
+                            <small>hours</small>
+                        </div>
+                        <div class="time">
+                            <h2 id="minutes">00</h2>
+                            <small>minutes</small>
+                        </div>
+                        <div class="time">
+                            <h2 id="seconds">00</h2>
+                            <small>seconds</small>
+                        </div>
+                    </div>
+
+                    <img
+                    src="./img/spinner.gif"
+                    alt="Loading..."
+                    id="loading"
+                    class="loading"
+                    />
+
                 </div>
                 <div>
                     <img src="img/video-bg.webp" alt="background image">
@@ -272,5 +301,6 @@
             </div>
         </footer>
     </div>
+    <script src="js/countdown.js"></script>
 </body>
 </html>

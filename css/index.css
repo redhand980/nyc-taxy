@@ -75,3 +75,10 @@ hr{
     display: flex;
     flex-direction: row;
 }
+.countdown {
+    display: flex;    
+    justify-content: space-around;
+}
+.time {
+    width: 100px;
+}
