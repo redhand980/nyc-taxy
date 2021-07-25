@@ -6,9 +6,9 @@
 }
 
 .wraper{
-    max-width: 1200px;    
+    max-width: 100%;    
     margin: 0px auto;
-    padding: 0px 15px;
+    padding: 0px;
 }
 
 @media(max-width: 1200px) {
@@ -28,12 +28,34 @@
         max-width: none;
     }
 }
+.top-div {
+    background-color: rgba(10, 7, 10, .4);
+    display: flex;
+    justify-content: space-between;
+}
+.top-div-mail {
+    color:#7a7777;
+    margin: 10px 10px 10px 75px;
+}
+
+.top-div-socials {
+    margin:10px 75px 10px 10px;
+}
+
+.social-img {
+    margin: 0 5px 0 5px;
+}
 
 header{
     background-image: url(../img/taxi-group.webp);
     background-attachment:fixed;
     background-position: center;
-    background-size: cover;      
+    background-size: cover;
+}
+
+.header-content-wrp {
+    width: 90%;
+    margin: 0 auto; 
 }
 
 .dark-bg {
@@ -42,12 +64,43 @@ header{
 
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 30px;
 }
-.header-form-wrapper{
+
+.menu {
     display: flex;
     justify-content: space-around;
 }
+
+.nav-number {
+    color: #ffc61a;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.header-form-text-wrp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-form-wrapper{ 
+    margin-right: 150px;
+}
+
+.reliable-taxi h2 {
+    color: #fff;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.reliable-taxi p {
+    color:#7a7777;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
 .book-a-ride{
     background-color: #fff;
     display: flex;
@@ -117,16 +170,30 @@ hr{
     margin-bottom: -8px;
 }
 .welcome{
-    background-image: url(../img/man-phone-cab.webp);
+    background-image: url(../img/half-cab.png);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    height: 300px;
 }
 .discount{
     background-color: #ffc61a;
     display: flex;
     flex-direction: column;
 }
+
+.download-app {
+    background: url(../img/man-phone-cab.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;    
+}
+
+.download-app-content h2{
+    color: #fff;
+    font-size: 80px;
+    font-weight: bold;
+}
+
 .mobile-app{
     display: flex;
 }

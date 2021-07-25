@@ -10,65 +10,74 @@
 <body>
     <div class="wraper">
         <header>
-            <div class="dark-bg">   
-                <nav>
-                    <div class="logo">
-                        <a href="#"><img src="img/nt_logo.svg" alt="logo"></a>
+            <div class="dark-bg">
+                <div class="top-div">
+                    <div class="top-div-mail"><p>nyc-taxi@email.com</p></div>
+                    <div class="top-div-socials">
+                        <span class="social-img"><img src="img/facebook-svgrepo-com.svg"></span>
+                        <span class="social-img"><img src="img/instagram-svgrepo-com.svg"></span>
+                        <span class="social-img"><img src="img/youtube-svgrepo-com.svg"></span>
                     </div>
-                    <div class="menu">
-                        <p>
-                            <a href="#our-fleet">Our fleet</a>
-                            <a href="#about-us">About Us</a>
-                            <a href="#app">App</a>
-                            <a href="#faq">FAQ</a>
-                            <a href="#contacts">Contacts</a>
-                            <span class="social-img"><img src="img/facebook-svgrepo-com.svg"></span>
-                            <span class="social-img"><img src="img/instagram-svgrepo-com.svg"></span>
-                            <span class="social-img"><img src="img/youtube-svgrepo-com.svg"></span>
-                        </p>
-                    </div>
-                </nav>
-                <div class="header-form-wrapper">
-                    <div class="book-a-ride">
-                        <p>Book a Ride</p>
-                        <hr>
-                        <form action="#" method="GET" enctype="multipart/form-data">
-                            <div class="form-field">
-                                <p>
-                                    <input type="tel" name="phone-number" placeholder="Phone number" maxlength="50" required>
-                                </p>
-                                </div>
-                            <div class="form-field">
-                                <p>
-                                    <input type="text" name="car-type" placeholder="Car Type" maxlength="200">
-                                </p>
-                            </div>
-                            <div class="form-field">
-                                <p>
-                                    <input type="text" name="travel-from" placeholder="Travel From" value="" maxlength="200">
-                                </p>
-                                </div>
-                            <div class="form-field">
-                                <p>
-                                    <input type="text" name="travel-to" placeholder="Travel To" value="" maxlength="200">
-                                </p>
-                            </div>   
-                            <div class="w-form__multiple-item">
-                                <input type="checkbox" value="By using  this form you agree with the storage and handling of your data by this website." required="" class="w-checkbox__input">
-                                    <span class="w-checkbox__mask" aria-hidden="true">By using  this form you agree with the storage and handling of your data by this website.</span>
-                                    <span title="Required field" class="required-mark">*</span>
-                            </div> 
-                            <button type="submit" class="form-button">Submit</button>         
-                        </form>
-                    </div>
-                    <div class="reliable-taxi">
-                        <h2>Your Reliable Taxi Service in NYC</h2>
-                        <hr>
-                        <p>Taking your anywhere you need to go in a safe and timely manner.</p>
-                        <div class="btn-lrn-more">
-                            <a href="#">Learn more</a>
+                </div>
+                <div class="header-content-wrp">                    
+                    <nav>
+                        <div class="logo">
+                            <a href="#"><img src="img/nt_logo.svg" alt="logo"></a>
                         </div>
-                    </div>
+                        <div class="menu">                            
+                                
+                            <div><a href="#our-fleet">Our fleet</a></div>
+                                <div><a href="#about-us">About Us</a></div>
+                                <div><a href="#app">App</a></div>
+                                <div><a href="#faq">FAQ</a></div>
+                                <div><a href="#contacts">Contacts</a></div>
+                        </div>
+                        <div class="nav-number"><span>+1 (234) 567 89 00</span></div>
+                    </nav>
+                    <div class="header-form-text-wrp">
+                        <div class="header-form-wrapper">
+                            <div class="book-a-ride">
+                                <p>Book a Ride</p>
+                                <hr>
+                                <form action="#" method="GET" enctype="multipart/form-data">
+                                    <div class="form-field">
+                                        <p>
+                                            <input type="tel" name="phone-number" placeholder="Phone number" maxlength="50" required>
+                                        </p>
+                                        </div>
+                                    <div class="form-field">
+                                        <p>
+                                            <input type="text" name="car-type" placeholder="Car Type" maxlength="200">
+                                        </p>
+                                    </div>
+                                    <div class="form-field">
+                                        <p>
+                                            <input type="text" name="travel-from" placeholder="Travel From" value="" maxlength="200">
+                                        </p>
+                                        </div>
+                                    <div class="form-field">
+                                        <p>
+                                            <input type="text" name="travel-to" placeholder="Travel To" value="" maxlength="200">
+                                        </p>
+                                    </div>   
+                                    <div class="w-form__multiple-item">
+                                        <input type="checkbox" value="By using  this form you agree with the storage and handling of your data by this website." required="" class="w-checkbox__input">
+                                            <span class="w-checkbox__mask" aria-hidden="true">By using  this form you agree with the storage and handling of your data by this website.</span>
+                                            <span title="Required field" class="required-mark">*</span>
+                                    </div> 
+                                    <button type="submit" class="form-button">Submit</button>         
+                                </form>
+                            </div>
+                        </div> 
+                        <div class="reliable-taxi">
+                            <h2>Your<br> Reliable<br> Taxi<br> Service<br> in NYC</h2>
+                            <hr>
+                            <p>Taking your anywhere you need to go in a safe and timely manner.</p>
+                            <div class="btn-lrn-more">
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                    </div>                        
                 </div> 
             </div>       
         </header>
@@ -142,7 +151,7 @@
             </section>
             <!--Welcome Section-->
             <section class="welcome">
-                <div class="dark-bg">
+                
                     <p>Welcome to NYC Taxi</p>
                     <h2>A Taxi Service in NY You Can Trust</h2>
                     <hr>
@@ -157,12 +166,16 @@
             </section>
             <!--Download App Section-->
             <section class="download-app">
-                    <p>Book from your smartphone</p>
-                    <h2><span><a href="tel:+12345678900" data-action="phone" class="ui-link">D</a></span><span>ownload Our App and </span><span>Book Your Rides</span><span> on the Go</span></h2>
-                    <p>We are ready to pick you up 24/7!</p>
-                    <div class="dld-btn">
-                        <a href="#">Download Now</a>
+                <div class="dark-bg">
+                    <div class="download-app-content">
+                        <p>Book from your smartphone</p>
+                        <h2><span><a href="tel:+12345678900" data-action="phone" class="ui-link">D</a></span><span>ownload Our App and </span><span>Book Your Rides</span><span> on the Go</span></h2>
+                        <p>We are ready to pick you up 24/7!</p>
+                        <div class="dld-btn">
+                            <a href="#">Download Now</a>
+                        </div>
                     </div>
+                </div>   
             </section>
             <!--Mobile App Section-->
             <section class="mobile-app">
