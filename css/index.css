@@ -35,6 +35,11 @@ header{
     background-position: center;
     background-size: cover;      
 }
+
+.dark-bg {
+    background-color: rgba(10, 7, 10, .7);;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
