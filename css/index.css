@@ -4,6 +4,10 @@
     border: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap');
+:root {    
+    font-family: 'Heebo', sans-serif;
+}
 
 .wraper{
     max-width: 100%;    
@@ -11,35 +15,18 @@
     padding: 0px;
 }
 
-@media(max-width: 1200px) {
-    .wraper {
-        max-width: 970px;
-    }
-}
 
-@media(max-width: 992px) {
-    .wraper {
-        max-width: 750px;
-    }
-}
-
-@media(max-width: 767px) {
-    .wraper {
-        max-width: none;
-    }
-}
 .top-div {
-    background-color: rgba(10, 7, 10, .4);
-    display: flex;
-    justify-content: space-between;
+    background-color: rgba(10, 7, 10, .4);       
 }
 .top-div-mail {
     color:#7a7777;
-    margin: 10px 10px 10px 75px;
+    margin: 10px 10px 10px 75px;    
 }
 
 .top-div-socials {
     margin:10px 75px 10px 10px;
+        
 }
 
 .social-img {
@@ -55,22 +42,23 @@ header{
 
 .header-content-wrp {
     width: 90%;
-    margin: 0 auto; 
+    margin: 0 auto;   
+    
 }
+
 
 .dark-bg {
     background-color: rgba(10, 7, 10, .7);
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
+nav{    
+    
     margin-top: 30px;
-}
+   
+   }
 
 .menu {
-    display: flex;
-    justify-content: space-around;
+
 }
 
 .nav-number {
@@ -80,18 +68,25 @@ nav{
 }
 
 .header-form-text-wrp {
-    display: flex;
-    justify-content: space-between;
+    grid-area: 2/1/3/5;
+   
 }
 
 .header-form-wrapper{ 
     margin-right: 150px;
+    grid-area: 2/1/3/3;
+    justify-self: start;
 }
+
+.reliable-taxi {
+        grid-area: 2/3/3/5;
+        justify-self: end;
+    }
 
 .reliable-taxi h2 {
     color: #fff;
     font-size: 80px;
-    font-weight: bold;
+    font-weight: bold;    
 }
 
 .reliable-taxi p {
@@ -102,9 +97,7 @@ nav{
 
 
 .book-a-ride{
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;    
+    background-color: #fff;   
 }
 
 img {
@@ -140,13 +133,20 @@ hr{
     height: 32px;
     width: 150px;
 }
-.carrousel {
+.carrousel {  
+    margin: auto;
+}
+.slides {
     display: flex;
     justify-content: space-around;    
     margin: auto;
+    flex-wrap: nowrap;
+    width: 100%;
+    background: #ffc61a;
 }
 .comfort, .sport, .van, .luxury{
     background: #ffc61a;
+    display: none;
 }
 
 .order-btn {
@@ -173,8 +173,30 @@ hr{
     background-image: url(../img/half-cab.png);
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: start;
     height: 300px;
 }
+.brend-color {
+    display: block;
+    color: #ffc61a;
+}
+
+.welcome-content p{
+    color: #7a7777;    
+}
+
+.welcome-content h3 {
+    display: block;
+}
+
+.welcome-content {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    flex-wrap: wrap;
+}
+
 .discount{
     background-color: #ffc61a;
     display: flex;
