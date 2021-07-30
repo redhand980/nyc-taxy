@@ -5,8 +5,13 @@
     box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 :root {    
     font-family: 'Heebo', sans-serif;
+    --main-dark-color: #202025;
+    --dark-accent-color: #9e9e9e;
+    --brend-color: #ffc61a;
+    --button-color: #9f340a;
 }
 
 .wraper{
@@ -15,22 +20,42 @@
     padding: 0px;
 }
 
-
 .top-div {
-    background-color: rgba(10, 7, 10, .4);       
+    background-color: rgba(10, 7, 10, .4); 
+    display: grid;      
+    grid-template: 40px/repeat(2, minmax(350px, 1fr));    
+    align-items: center;
 }
-.top-div-mail {
-    color:#7a7777;
-    margin: 10px 10px 10px 75px;    
+
+.top-div-mail {    
+    margin-left: 65px;
+}
+
+.mail-link {
+    text-decoration: none;
+    color:var(--dark-accent-color);
+    font-size: 10px;
+    font-weight: 700;
 }
 
 .top-div-socials {
-    margin:10px 75px 10px 10px;
-        
+    margin-right: 60px;
+    justify-self: end;
+}
+
+img {
+    max-width: 100%;
 }
 
 .social-img {
     margin: 0 5px 0 5px;
+}
+
+.social-img img{
+    background-color: #fff;   
+    border: 1px #fff solid;
+    height: 22px;
+    width: 22px;
 }
 
 header{
@@ -46,69 +71,199 @@ header{
     
 }
 
-
 .dark-bg {
     background-color: rgba(10, 7, 10, .7);
 }
 
 nav{    
-    
-    margin-top: 30px;
-   
-   }
+    display: grid;
+    grid-template: 75px/repeat(3, minmax(350px, 1fr));
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+    height: 37px;    
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.menu a:hover {
+    color: var(--brend-color);
+}
 
 .menu {
-
+    display: flex;
+    justify-content: space-around;
+    min-width: 350px;
 }
 
-.nav-number {
-    color: #ffc61a;
-    font-size: 26px;
+.nav-number {    
+    justify-self: end;
+}
+
+.nav-number a {
+    color: var(--brend-color);
+    font-size: 20px;
     font-weight: bold;
+    text-decoration: none;
 }
 
-.header-form-text-wrp {
-    grid-area: 2/1/3/5;
-   
+.header-bottom-content-wrap {
+    display: grid;
+    grid-template-columns: minmax(350px,1fr) 150px minmax(350px,1fr);
+    grid-template-rows: auto;
 }
 
-.header-form-wrapper{ 
-    margin-right: 150px;
-    grid-area: 2/1/3/3;
+.divider-element {
+    background-color: var(--brend-color);
+    height: 4px;
+    width: 12%;    
+}
+
+.book-a-ride h2 {
+    font-size: 30px;
+    line-height: 1.33;
+    letter-spacing: 0;
+    font-weight: 900;    
+}
+
+.header-form-wrapper {     
+    background-color: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px 30px 20px 30px;
+    grid-area: 1/1/2/2;
+}
+
+.header-form-wrapper input {
+    border: 2px rgb(228, 228, 228) solid;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: var(--dark-accent-color);
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 15px 26px;    
+    line-height: 1.3333;
+    width: 95%;
+    margin: 15px auto;
+}
+
+.w-form__multiple-item {
     justify-self: start;
 }
 
-.reliable-taxi {
-        grid-area: 2/3/3/5;
-        justify-self: end;
-    }
+.reliable-taxi { 
+    grid-area: 1/3/2/4;       
+    align-self: center;
+    justify-self: end;
+}
 
 .reliable-taxi h2 {
     color: #fff;
-    font-size: 80px;
-    font-weight: bold;    
+    font-size: 72px;
+    font-weight: 900; 
+    display: block;  
 }
 
-.reliable-taxi p {
-    color:#7a7777;
-    font-size: 24px;
+.reliable-taxi-divider {
+    background-color: #fff;
+    height: 4px;
+    width: 12%;    
+}
+
+.brend-text {
+    color: var(--brend-color);
     font-weight: bold;
+    font-size: 19px;
+}
+.reliable-taxi p {
+    color: var(--dark-accent-color);
+    font-size: 19px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    display: block;
+}
+
+.learn-more-btn {
+    background-color: var(--brend-color);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.learn-more-btn:hover{
+    background-color: var(--button-color);
+}
+
+.our-taxi-rates-content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 60px;
+    line-height: 1.5;
+}
+
+.our-taxi-rates-text{
+    display: grid;
+    grid-template: auto/1fr;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.yellow-text-paragr {
+    color: var(--brend-color);
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;    
+    text-transform: none;
+}
+
+.our-taxi-rates-title {
+    font-size: 40px;
+    color: var(--main-dark-color);
+    line-height: 1.33;
+    font-family: 'Heebo',sans-serif;
+    font-weight: 900;
+    letter-spacing: 0;
+}
+
+.our-taxi-rates-title-divider {
+    background-color: var(--brend-color);
+    height: 4px;
+    width: 6%;  
+}
+
+.our-taxi-rates-paragr-vulgaris {
+    font-size: 19px;
+    line-height: 1.56;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    color: var(--dark-accent-color);
+    text-transform: none;
 }
 
 
 .book-a-ride{
     background-color: #fff;   
-}
-
-img {
-    max-width: 100%;
-}
-
-.social-img img{
-    background-color: #fff;   
-    border: 1px #fff solid;
-    height: 25px;
-    width: 25px;
 }
 
 .comfort-types img {    
@@ -117,13 +272,17 @@ img {
 }
 
 .comfort-types-cnt {
-    margin: 50px 50px 50px 30px;
+    padding: 40px 40px 20px 40px;
+    margin:10px;
 }
-hr{
-    height: 2px;
-    width: 8%;
-    background-color: #ffc61a;
+
+.comfort-types-bold-span {
+    color: var(--main-dark-color);
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+    line-height: 2;    
 }
+
 .form-button{
     background-color: #ffc61a;
     height: 32px;
@@ -133,17 +292,43 @@ hr{
     height: 32px;
     width: 150px;
 }
+
+.order-btn {
+    margin-top: 40px;
+}
+
 .carrousel {  
     margin: auto;
 }
 .slides {
-    display: flex;
-    justify-content: space-around;    
-    margin: auto;
-    flex-wrap: nowrap;
-    width: 100%;
-    background: #ffc61a;
+    display: grid;
+    grid-template: 490px/repeat(3, minmax(350px, 1fr));     
+    
 }
+
+.comfort-heading-logo {
+    font-size: 36px;
+    line-height: 1.33;
+    font-family: 'Heebo',sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #202025;
+    text-transform: none;
+}
+
+.comfort-divider {
+    background-color: var(--main-dark-color);
+    height: 4px;
+    width: 12%;
+}
+
+.comfort-types-cnt {
+    background: #ffc61a;
+    
+}
+
 .comfort, .sport, .van, .luxury{
     background: #ffc61a;
     display: none;
@@ -170,35 +355,199 @@ hr{
     margin-bottom: -8px;
 }
 .welcome{
-    background-image: url(../img/half-cab.png);
+    background-image: url(../img/half-cab_optimized_1920.webp);
     background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: start;
-    height: 300px;
-}
-.brend-color {
-    display: block;
-    color: #ffc61a;
+    background-position: center; 
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.welcome-content p{
-    color: #7a7777;    
-}
-
-.welcome-content h3 {
-    display: block;
+.welcome-content-wrapper {
+    width: 90%;
+    margin: 0 auto;    
+    display: grid;
+    grid-template: 1fr/repeat(2, minmax(350px, 1fr));
+    align-self:center;
 }
 
 .welcome-content {
+    grid-area: 1/1/2/2;
+    justify-self: start;
+    align-self: center;
+    text-align: left;
+}
+
+.welcome-brend-color-paragr {
+    color: var(--brend-color);
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.welcome-title {
+    font-size: 40px;
+    color: var(--main-dark-color);
+    line-height: 1.5;
+    font-family: 'Heebo',sans-serif;
+    font-weight: 900;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+}
+
+.welcome-divider {
+    background-color: var(--brend-color);
+    height: 4px;
+    width: 6%;
+}
+
+.welcome-subtitle-paragr {    
+    min-width: 320px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--dark-accent-color);
+    font-size: 19px;
+    line-height: 1.5;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    letter-spacing: 0;
+}
+
+.welcome-list {
+    list-style: none;
+}
+.welcome-list li {
+    margin-top: 20px;
+}
+
+.welcome-list-img {
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;    
+}
+
+.welcome-list-img-big {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.welcome-list-li-wrapper {
     display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    flex-wrap: wrap;
+    align-items:center;    
+}
+
+.welcome-list-content {
+    padding-top: 10px;
+    font-size: 17px;
+    line-height: 1.5;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    color: var(--dark-accent-color);
+    text-transform: none;
+}
+
+.welcome-list-content h3 {
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: 'Heebo',sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    color: var(--main-dark-color);
+    text-transform: none;
+}
+
+.download-app-content-wrapp {
+    width: 90%;
+    margin: 0 auto;    
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: minmax(320px,1fr) 15%;
+}
+
+.download-app-content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.download-app-content h2{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 56px;
+    line-height: 1.1;
+    letter-spacing: 0; 
+    display: block;
+    font-family: 'Heebo',sans-serif;
+    font-weight: 900;
+    text-transform: none;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.download-brend-paragr {
+    color: var(--brend-color);
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.download-action-span a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.download-brend-heading-span {
+    color: var(--brend-color);
+}
+
+.download-app-bottom-paragr {
+    margin-top: 40px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.download-button {    
+    margin-top: 30px;
+}
+
+.download-app-button {
+    background-color: var(--brend-color);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.download-button :hover {
+    background-color: var(--button-color);
 }
 
 .discount{
-    background-color: #ffc61a;
+    background-color: var(--brend-color);
     display: flex;
     flex-direction: column;
 }
