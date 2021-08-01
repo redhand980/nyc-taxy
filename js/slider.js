@@ -9,21 +9,11 @@ const slideVan = van.innerHTML;
 const slideLuxury = luxury.innerHTML;
 
 (function() {
-
-    /*const slides = [
-      'https://placekitten.com/g/200/300',
-      'https://placekitten.com/g/200/301',
-      'https://placekitten.com/g/200/302',
-      'https://placekitten.com/g/200/303',
-      'https://placekitten.com/g/200/304',
-      'https://placekitten.com/g/200/306'
-    ];*/
-
     const slides = [
-        slideComfort,
-        slideSport,
-        slideVan,
-        slideLuxury,
+      slideComfort,
+      slideSport,
+      slideVan,
+      slideLuxury,
     ];
   
     let firstSlide = 0;
@@ -43,8 +33,7 @@ const slideLuxury = luxury.innerHTML;
     function nextSlide() {
       firstSlide = firstSlide + 1 >= slides.length ? 0 : firstSlide + 1;
       showCurrentSlide();
-    }
-  
+    }  
   
     setInterval(nextSlide, 2000);
   
@@ -57,7 +46,7 @@ const slideLuxury = luxury.innerHTML;
       } else if (window.screen.width <= 900) {
         slidesToShow = 3;
       } else {
-        slidesToShow = 4;
+        slidesToShow = 3;
       }
       showCurrentSlide();
     }
