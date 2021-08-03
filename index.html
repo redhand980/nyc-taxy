@@ -60,7 +60,13 @@
                                         <input type="tel" name="phone-number" placeholder="Phone number" maxlength="50" required>
                                     </p>                                       
                                     <p>    
-                                        <input type="text" name="car-type" placeholder="Car Type" maxlength="200">
+                                        <select id="car-type" name="Car Type">
+                                          
+                                            <option value="comfort">Comfort</option>
+                                            <option value="sport">Sport</option>
+                                            <option value="van">Van</option>
+                                            <option value="luxury">Luxury</option>
+                                        </select>
                                     </p>
                                     <p>   
                                         <input type="text" name="travel-from" placeholder="Travel From" value="" maxlength="200">
@@ -71,12 +77,12 @@
                                     <p>
                                         <input type="text" placeholder="Pick Up Time" value="" maxlength="2000">
                                     </p> 
-                                    <label class="checkbox" for="form-checkbox">
-                                        <input class="checkbox-input" type="checkbox" name="form-checkbox-name" id="form-checkbox">
-                                        
-                                        By using  this form you agree with the storage and handling of your data by this website.
-                                    </label>
-                                    <button type="submit" class="form-button">Submit</button>
+                                    <label class="w-checkbox" id="form-checkbox" style="color:#202025">
+                                        <input type="checkbox" id="form-checkbox" value="By using  this form you agree with the storage and handling of your data by this website." required="" class="w-checkbox__input">
+                                        <span class="w-checkbox-content">By using  this form you agree with the storage and handling of your data by this website.</span>
+                                        <span title="Required field" class="required-mark">*</span>
+                                    </label><br>
+                                    <button type="submit" class="header-form-button">Submit</button>
                                         
                                 </form>
                             </div> 
@@ -390,39 +396,61 @@
                         <h2>Answering Your Questions</h2>
                         <div class="testimonials-divider"></div>
                         <p class="faq-heading-paragr">If you have any questions about our taxi service, please contact us in any convenient way,<br> and also read the information below.</p>
-                        <div class="accordeon">
-                            <div>
-                                <h3>How to book a ride?</h3>
-                                <p>You can book a ride by filling out the form on our website. In this case, we will contact you to confirm your request. Or you can download our app.</p>
+                        <div class="faq-accordion">
+                            <div class="content-box">
+                                <div class="box-label">How to book a ride?</div>
+                                <div class="box-content">
+                                    <p>You can book a ride by filling out the form on our website. In this case, we will contact you to confirm your request. Or you can download our app.</p>
+                                </div>
                             </div>
-                            <div>
-                                <h3>Where can I download your app?</h3>
-                                <p>The NYC Taxi app is available for iOS and Android smartphones. Download it from Google Play and App Store.</p>
+                            <div class="content-box">
+                                <div class="box-label">Where can I download your app?</div>
+                                <div class="box-content">
+                                    <p>The NYC Taxi app is available for iOS and Android smartphones. Download it from Google Play and App Store.</p>
+                                </div>
                             </div>
-                            <div>
-                                <h3>Do you provide transfer services from the airport?</h3>
-                                <p>Yes, we can pick you up at the LaGuardia Airport, John F. Kennedy International Airport, and Newark Liberty International Airport.</p>
+                            <div class="content-box">
+                                <div class="box-label">Do you provide transfer services from the airport?</div>
+                                <div class="box-content">
+                                    <p>Yes, we can pick you up at the LaGuardia Airport, John F. Kennedy International Airport, and Newark Liberty International Airport.</p>
+                                </div>
                             </div>
-                            <div>
-                                <h3>Can I book a ride early in the morning?</h3>
-                                <p>Sure. you can book a ride whenever you need. We work 24/7</p>
+                            <div class="content-box">
+                                <div class="box-label">Can I book a ride early in the morning?</div>
+                                <div class="box-content">
+                                    <p>Sure. you can book a ride whenever you need. We work 24/7.</p>
+                                </div>
                             </div>
-                            <div>    
-                                <h3>How many drivers do you have?</h3>
-                                <p>More than 700 drivers are connected to our system. And we are constantly growing!</p>
+                            <div class="content-box">
+                                <div class="box-label">How many drivers do you have?</div>
+                                <div class="box-content">
+                                    <p>More than 700 drivers are connected to our system. And we are constantly growing!</p>
+                                </div>
                             </div>
-                            <div>    
-                                <h3>Why do you have a fee for booking in advance?</h3>
-                                <p>By paying the fee for booking in advance, you can be sure that on the specified date and time, the cab will be there.</p>
+                            <div class="content-box">
+                                <div class="box-label">Why do you have a fee for booking in advance?</div>
+                                <div class="box-content">
+                                    <p>By paying the fee for booking in advance, you can be sure that on the specified date and time, the cab will be there.</p>
+                                </div>
                             </div>
-                            <div>    
-                                <h3>Can I call a taxi by phone?</h3>
-                                <p>Yes, call +1 (234) 567 89 00. But are operators can be busy, we proceed online requests faster.</p>
-                            </div>    
-                            <div>    
-                                <h3>Can I cancel my ride?</h3>
-                                <p>Yes, you can cancel your request but only before our cab arrives.</p>
+                            <div class="content-box">
+                                <div class="box-label">Can I call a taxi by phone?</div>
+                                <div class="box-content">
+                                    <p>Yes, call 
+                                        <a href="tel:+12345678900" data-action="phone" class="ui-link">
+                                            <span class="text-ui-brand-color" style="color: var(--brand-color);">
+                                                <span style="font-weight: bold;">+1 (234) 567 89 00</span>
+                                            </span>
+                                        </a>. But are operators can be busy, we proceed online requests faster.
+                                    </p>
+                                </div>
                             </div>
+                            <div class="content-box">
+                                <div class="box-label">Can I cancel my ride?</div>
+                                <div class="box-content">
+                                    <p>Yes, you can cancel your request but only before our cab arrives.</p>
+                                </div>
+                            </div>           
                         </div>
                     </div>
             </section>
@@ -459,8 +487,9 @@
                             <div class="footer-logo">
                                 <a href="#"><img src="img/nt_logo.svg" alt="logo"></a>
                             </div>
-                            <p>We are a reliable taxi service in New York. We offer affordable rates for everyday rides and various cars for your comfort.</p>
-                            <a href="#" class="myButton">Google Play</a>
+                            <div class="footer-logo-paragr">
+                                <p>We are a reliable taxi service in New York. We offer affordable rates for everyday rides and various cars for your comfort.</p>
+                            </div>
                         </div>
                         <div class="footer-about-company">
                             <h2>About Company</h2>
@@ -479,7 +508,7 @@
                         <div class="footer-offers">
                             <h2>Receive Special Offers</h2>                        
                             <input type="email"class="footer-input" placeholder="Email*" required="" value="" maxlength="2000"><br>
-                            <button type="submit" class="Subscribe-button"><span class="footer-button-text">Subscribe</span></button>
+                            <button type="submit" class="subscribe-button"><span class="footer-button-text">Subscribe</span></button>
                         </div>
                     </div>
                 </div>
@@ -489,5 +518,6 @@
         <script src="js/countdown.js"></script>
         <script src="js/slider.js">slider.js</script>
         <script src="js/testim-slider.js"></script>
+        <script src="js/accordion.js"></script>
     </body>
 </html>
